@@ -1,0 +1,22 @@
+<ion-content class="auth-form">
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/admin-registeration']" expand="block" color="primary">Register a new house</ion-button>
+
+        <span class="divider line one-line">or</span>
+
+        <ion-button [routerLink]="['/registration']" (click) = "showGroupIDField()"expand="block" color="tertiary">I have a Group ID</ion-button>
+
+        <ion-item *ngif = "groupIDShow">
+          <ion-label  position="floating">Group ID</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <span class="divider line one-line">or</span>
+
+        <ion-button [routerLink]="['/login']" expand="block" color="danger">Sign In</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content> 

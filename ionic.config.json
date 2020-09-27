@@ -1,0 +1,7 @@
+{
+  "name": "covid-house-management",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Create Norms</ion-title>
+
+        <ion-buttons slot="end">
+            <ion-button (click)="closeModal()">Close</ion-button>
+
+        </ion-buttons>
+        <!-- <ion-title>Close</ion-title> -->
+      </ion-toolbar>
+      
+    <!-- <ion-toolbar>
+
+    </ion-toolbar> -->
+
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+      <ion-label>Anonymous Norms</ion-label>
+
+      <ion-item>
+          <ion-textarea rows="6" cols="20" placeholder="Enter any new norms here...(All norms are anonymous)"></ion-textarea>
+      </ion-item>
+      <ion-button [routerLink]="['/tab/tab2']" (click) = "submitNorm()" expand="block" color="tertiary">Submit Anonymous Norm</ion-button>
+
+  </ion-content>
